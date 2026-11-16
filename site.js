@@ -1,10 +1,8 @@
 const captions = {
-  foco: "Foco · 25 min por padrão",
-  pausa: "Pausa · 5 min por padrão",
-  longa: "Pausa longa · 15 min por padrão",
-  timer: "Timer · funciona sem conta",
-  historico: "Histórico · sessões neste iPhone",
-  ajustes: "Ajustes · preferências neste iPhone",
+  ciclo: "Ciclo · o que estudar agora",
+  estudo: "Bloco de estudo · 25 min por padrão",
+  materias: "Matérias · ordem e peso de cada uma",
+  historico: "Histórico · tempo e acertos por matéria",
 };
 
 for (const preview of document.querySelectorAll("[data-preview]")) {

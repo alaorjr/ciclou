@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0e0f1b">
-  <meta name="description" content="Encontre ajuda com o timer, as notificações, as Atividades ao Vivo e o histórico do Pomo101 para iPhone.">
-  <title>Suporte do Pomo101</title>
+  <meta name="description" content="O Ciclou organiza seus estudos em um ciclo: uma fila de matérias com pesos, que diz o que estudar agora e mostra seu acerto em questões por matéria. Veja como funciona e encontre ajuda.">
+  <title>Ciclou · ciclo de estudos por matéria · Suporte</title>
   <link rel="icon" href="assets/icon.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
   <script src="site.js" defer></script>
@@ -13,7 +13,7 @@
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
   <header class="site-header">
-    <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="36" height="36">Pomo101</a>
+    <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="36" height="36">Ciclou</a>
     <nav aria-label="Navegação principal">
       <a href="index.html" aria-current="page">Suporte</a>
       <a href="privacy.html">Privacidade</a>
@@ -22,45 +22,99 @@
 
   <main class="split" id="conteudo">
     <section class="hero reading" aria-labelledby="titulo">
-      <h1 id="titulo" data-reveal>Suporte do<br>Pomo101</h1>
-      <p class="lead" data-reveal>Encontre ajuda para ajustar o timer, receber avisos e acompanhar suas sessões no iPhone.</p>
-      <a class="action" href="#perguntas" data-reveal>Ver perguntas <span aria-hidden="true">↓</span></a>
+      <p class="eyebrow" data-reveal>Suporte do Ciclou</p>
+      <h1 id="titulo" data-reveal>Estude em fila,<br>não por agenda.</h1>
+      <p class="lead" data-reveal>O Ciclou monta um ciclo de estudos com as suas matérias, diz qual é a matéria da vez e mostra seu acerto em questões em cada uma.</p>
+      <div class="actions" data-reveal>
+        <a class="action" href="#como-funciona">Como funciona <span aria-hidden="true">↓</span></a>
+        <a class="text-link" href="#perguntas">Ir para as perguntas</a>
+      </div>
     </section>
 
-    <aside class="stage" aria-label="Prévia do Pomo101">
+    <aside class="stage" aria-label="Prévia do Ciclou">
       <figure class="preview" data-preview>
-        <div class="preview-controls" data-reveal role="group" aria-label="Escolher modo do timer" hidden>
-          <button type="button" aria-pressed="true" aria-controls="foco">Foco</button>
-          <button type="button" aria-pressed="false" aria-controls="pausa">Pausa</button>
-          <button type="button" aria-pressed="false" aria-controls="longa">Longa</button>
+        <div class="preview-controls" data-reveal role="group" aria-label="Escolher tela do app" hidden>
+          <button type="button" aria-pressed="true" aria-controls="ciclo">Ciclo</button>
+          <button type="button" aria-pressed="false" aria-controls="estudo">Estudo</button>
+          <button type="button" aria-pressed="false" aria-controls="materias">Matérias</button>
         </div>
         <div class="screen-stack" data-reveal>
-          <img class="screen is-current" id="foco" src="assets/focus.webp" width="660" height="1000" alt="Timer de Foco do Pomo101 com 25 minutos e anel coral.">
-          <img class="screen" id="pausa" src="assets/shortBreak.webp" width="660" height="1000" alt="Timer de Pausa do Pomo101 com 5 minutos e anel verde." aria-hidden="true">
-          <img class="screen" id="longa" src="assets/longBreak.webp" width="660" height="1000" alt="Timer de Pausa Longa do Pomo101 com 15 minutos e anel azul." aria-hidden="true">
+          <img class="screen is-current" id="ciclo" src="assets/ciclo.webp" width="660" height="1000" alt="Aba Ciclo do Ciclou, com o anel do ciclo em 1 de 10 blocos e a matéria Raciocínio Lógico indicada para estudar agora.">
+          <img class="screen" id="estudo" src="assets/estudo.webp" width="660" height="1000" alt="Bloco de estudo de Raciocínio Lógico em andamento no Ciclou, com o tempo restante." aria-hidden="true">
+          <img class="screen" id="materias" src="assets/materias.webp" width="660" height="1000" alt="Aba Matérias do Ciclou, com cinco matérias e o número de blocos de cada uma." aria-hidden="true">
         </div>
-        <figcaption aria-live="polite" data-reveal>Foco · 25 min por padrão</figcaption>
+        <figcaption aria-live="polite" data-reveal>Ciclo · o que estudar agora</figcaption>
       </figure>
     </aside>
 
     <div class="reading article">
+      <section id="como-funciona" class="method" aria-labelledby="como-funciona-titulo">
+        <h2 id="como-funciona-titulo" data-reveal>O que o Ciclou faz</h2>
+        <p data-reveal>Um cronograma preso aos dias da semana quebra no primeiro imprevisto: perdeu a terça, perdeu a matéria da terça. No ciclo de estudos, as matérias formam uma fila. Você estuda a próxima da fila quando puder, e nenhuma fica para trás.</p>
+
+        <ol class="features">
+          <li data-reveal>
+            <h3>Cada matéria tem um peso</h3>
+            <p>Você define quantos blocos cada matéria recebe por ciclo. A que pesa mais no edital, ou em que você tem mais dificuldade, aparece mais vezes.</p>
+          </li>
+          <li data-reveal>
+            <h3>O app diz a matéria da vez</h3>
+            <p>A tela inicial mostra o que estudar agora. As matérias se revezam, para você não passar o dia inteiro na mesma nem esquecer as menores.</p>
+          </li>
+          <li data-reveal>
+            <h3>Dia perdido não desmonta o plano</h3>
+            <p>Não há matéria presa a uma data. Se você ficou três dias sem estudar, a fila continua exatamente de onde parou.</p>
+          </li>
+          <li data-reveal>
+            <h3>Acerto em questões por matéria</h3>
+            <p>Ao fim de cada bloco, registre o assunto, as questões resolvidas e os acertos. O histórico mostra o percentual de cada matéria e onde reforçar.</p>
+          </li>
+          <li data-reveal>
+            <h3>O ciclo fecha e recomeça</h3>
+            <p>Quando todas as matérias cumprem seus blocos, o ciclo é concluído e o próximo começa. Você acompanha quantos ciclos já fechou.</p>
+          </li>
+        </ol>
+
+        <div class="example" data-reveal>
+          <h3>Um exemplo de ciclo</h3>
+          <p>Com Português valendo 3 blocos, três matérias valendo 2 e Informática valendo 1, o ciclo tem 10 blocos e o app sugere esta ordem:</p>
+          <ol class="sequence" aria-label="Ordem sugerida dos 10 blocos do ciclo">
+            <li style="--c:#ff735c">Português</li>
+            <li style="--c:#ffb340">Raciocínio Lógico</li>
+            <li style="--c:#fadb5c">Constitucional</li>
+            <li style="--c:#6bd985">Administrativo</li>
+            <li style="--c:#4dcccc">Informática</li>
+            <li style="--c:#ff735c">Português</li>
+            <li style="--c:#ffb340">Raciocínio Lógico</li>
+            <li style="--c:#fadb5c">Constitucional</li>
+            <li style="--c:#6bd985">Administrativo</li>
+            <li style="--c:#ff735c">Português</li>
+          </ol>
+          <p class="note">Você pode escolher outra matéria ou pular a da vez a qualquer momento. O app ajusta a fila.</p>
+        </div>
+      </section>
+
       <section id="perguntas" aria-labelledby="perguntas-titulo">
         <h2 id="perguntas-titulo" data-reveal>Perguntas frequentes</h2>
-        <p data-reveal><strong>Como começo uma sessão?</strong> Na aba <strong>Timer</strong>, escolha Foco, Pausa ou Longa e toque em <strong>Começar</strong>. Você pode pausar e retomar a sessão. Ao concluir um foco, o app seleciona a pausa curta. Para iniciá-la, toque em <strong>Começar</strong>.</p>
-        <p data-reveal><strong>Como ajusto os tempos e a meta?</strong> Toque no botão de ajustes na aba Timer. As durações padrão são 25 minutos de foco, 5 de pausa e 15 de pausa longa. Ali também é possível alterar a meta diária de sessões de foco, que começa em quatro.</p>
-        <p data-reveal><strong>Por que o aviso ficou sem som?</strong> Confira a permissão e os sons das notificações do Pomo101 nos Ajustes do iPhone. Nos ajustes do timer, confira a opção <strong>Som ao concluir</strong>.</p>
-        <p data-reveal><strong>Como vejo o timer com a tela bloqueada?</strong> As Atividades ao Vivo mostram a contagem na Tela Bloqueada e, em modelos compatíveis, na Dynamic Island. Confira se o recurso está permitido para o Pomo101 nos Ajustes do iPhone.</p>
-        <p data-reveal><strong>Onde ficam as sessões concluídas?</strong> Na aba <strong>Histórico</strong>, você pode ver as sessões por dia, semana ou mês. O histórico fica armazenado no iPhone.</p>
+        <p data-reveal><strong>O que é um ciclo de estudos?</strong> É uma fila de matérias. Cada matéria recebe um número de blocos por ciclo, e você estuda na ordem, sem depender do dia da semana. Quando todas as matérias cumprem seus blocos, o ciclo fecha e o próximo começa.</p>
+        <p data-reveal><strong>Como monto meu ciclo?</strong> Na primeira abertura, escolha um modelo (ENEM ou Concursos) ou toque em <strong>Criar minhas matérias</strong>. Na aba <strong>Matérias</strong>, toque em <strong>+</strong> para adicionar, toque em uma matéria para mudar nome, cor e blocos por ciclo, e use <strong>Editar</strong> para reordenar a fila. Os modelos são só um ponto de partida.</p>
+        <p data-reveal><strong>Como começo um bloco?</strong> Na aba <strong>Ciclo</strong>, o cartão <strong>Agora</strong> mostra a matéria da vez. Toque em <strong>Estudar</strong> para iniciar o bloco. Para estudar outra matéria, toque nela na fila do ciclo. <strong>Pular</strong> passa para a próxima sem registrar nada.</p>
+        <p data-reveal><strong>Como registro assunto e questões?</strong> Ao fim de cada bloco, o app pergunta o assunto estudado, quantas questões você resolveu e quantas acertou. O registro é opcional. Para preencher ou corrigir depois, toque na sessão na aba <strong>Histórico</strong>.</p>
+        <p data-reveal><strong>As pausas contam no ciclo?</strong> Não. Só os blocos de estudo concluídos avançam o ciclo. Ao terminar um bloco, o app deixa a pausa curta selecionada, e você decide se quer usá-la.</p>
+        <p data-reveal><strong>Como ajusto a duração dos blocos e a meta?</strong> Toque no botão de ajustes na aba Ciclo. Os padrões são 25 minutos de estudo, 5 de pausa e 15 de pausa longa, com meta de quatro blocos por dia.</p>
+        <p data-reveal><strong>Por que o aviso ficou sem som?</strong> Confira a permissão e os sons das notificações do Ciclou nos Ajustes do iPhone. Nos ajustes do app, confira a opção <strong>Som ao concluir</strong>.</p>
+        <p data-reveal><strong>Como vejo o bloco com a tela bloqueada?</strong> As Atividades ao Vivo mostram a matéria e a contagem na Tela Bloqueada e, em modelos compatíveis, na Dynamic Island. Confira se o recurso está permitido para o Ciclou nos Ajustes do iPhone.</p>
+        <p data-reveal><strong>O que acontece se eu excluir uma matéria?</strong> Ela sai da fila do ciclo. As sessões já registradas continuam no histórico com o nome da matéria.</p>
       </section>
 
       <figure class="reference">
-        <img src="assets/history.webp" width="660" height="1000" loading="lazy" data-reveal alt="Aba Histórico do Pomo101 com os filtros Dia, Semana e Mês.">
-        <figcaption data-reveal>Em <strong>Histórico</strong>, toque em Dia, Semana ou Mês para mudar o período.</figcaption>
+        <img src="assets/historico.webp" width="660" height="1000" loading="lazy" data-reveal alt="Aba Histórico do Ciclou com os filtros Dia, Semana e Mês e o tempo de estudo concluído.">
+        <figcaption data-reveal>Em <strong>Histórico</strong>, veja o tempo por dia, semana ou mês e o percentual de acerto de cada matéria.</figcaption>
       </figure>
 
       <section class="contact" aria-labelledby="contato">
         <h2 id="contato" data-reveal>Fale com o suporte</h2>
-        <p data-reveal>Para pedir ajuda com o Pomo101, escreva para <a href="mailto:alaorjr@icloud.com">alaorjr@icloud.com</a> ou abra um relato no GitHub Issues.</p>
+        <p data-reveal>Para pedir ajuda com o Ciclou, escreva para <a href="mailto:alaorjr@icloud.com">alaorjr@icloud.com</a> ou abra um relato no GitHub Issues.</p>
         <p data-reveal>Se puder, informe o modelo do iPhone, a versão do iOS e o que você estava fazendo quando o problema aconteceu.</p>
         <p class="public-report-notice" data-reveal><strong>Os relatos e anexos no GitHub são públicos. Evite incluir informações pessoais.</strong></p>
         <a class="action" href="https://github.com/alaorjr/Pomo101-support/issues" data-reveal>Abrir relato no GitHub <span aria-hidden="true">↗</span></a>
@@ -69,7 +123,7 @@
   </main>
 
   <footer class="site-footer">
-    <p class="closing" data-reveal>Seu tempo, com intenção.</p>
+    <p class="closing" data-reveal>Uma matéria de cada vez.</p>
     <a href="privacy.html" data-reveal>Política de Privacidade <span aria-hidden="true">→</span></a>
   </footer>
 </body>
